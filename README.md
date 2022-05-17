@@ -69,3 +69,13 @@ develop 브랜치에서 새로운 기능을 개발하거나 버그 수정이 필
 
 <hr/>
 
+## git-flow 활용해보기(ft.sourcetree)
+간단한 git 활용 도구인 sourcetree를 사용해 git-flow를 활용해볼 수 있다.
+
+
+### 1. github 원격 reposiory 생성
+### 2. sourcetree를 사용해 로컬 저장소로 clone
+<p align="center"><img src="./img/step1-clone.png" width="500px" height="480px" ></p>
+
+### 3. 상단의 깃플로우 탭 클릭 후 저장소 초기화 실행
+<p align="center"><img src="./img/step2-gitflow_init.png" width="500px" height="480px" ></p>
