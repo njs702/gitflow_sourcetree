@@ -136,3 +136,11 @@ develop 브랜치에서 새로운 기능을 개발하거나 버그 수정이 필
 <p align="center">main 버전 관리를 위한 태그 입력 ex) v1.0</p>
 
 ### 7. 배포 버전(main) 원격 저장소로 push하기
+
+<p align="center"><img src="./img/step7-push.PNG"></p>
+
+<p align="center">상단의 push 탭 클릭 후 develop, main 모두 체크 후 push</p>
+
+<p align="center"><img src="./img/step7-remote_repo.PNG"></p>
+
+<p align="center">원격 저장소의 main 브랜치 내용이 수정된 것을 볼 수 있다</p>
