@@ -118,3 +118,29 @@ develop 브랜치에서 새로운 기능을 개발하거나 버그 수정이 필
 <p align="center">기능 마무리 후 브랜치 삭제 후 develop 브랜치로 변경</p>
 
 ### 6. 병합된 develop 브랜치 release(배포) 하기
+
+<p align="center"><img src="./img/step5-release_create.PNG"></p>
+
+<p align="center">상단의 깃플로우 탭 클릭 후 '새 릴리즈 시작' 클릭</p>
+
+<p align="center"><img src="./img/step5-release_create2.PNG"></p>
+
+<p align="center">릴리즈 명을 작성한다 ex) v1.0</p>
+
+<p align="center"><img src="./img/step5-endrelease.PNG"></p>
+
+<p align="center">릴리즈 작업 마무리 후 상단의 깃 플로우 탭 클릭, '릴리즈 마무리' 클릭</p>
+
+<p align="center"><img src="./img/step5-endrelease2.PNG"></p>
+
+<p align="center">main 버전 관리를 위한 태그 입력 ex) v1.0</p>
+
+### 7. 배포 버전(main) 원격 저장소로 push하기
+
+<p align="center"><img src="./img/step7-push.PNG"></p>
+
+<p align="center">상단의 push 탭 클릭 후 develop, main 모두 체크 후 push</p>
+
+<p align="center"><img src="./img/step7-remote_repo.PNG"></p>
+
+<p align="center">원격 저장소의 main 브랜치 내용이 수정된 것을 볼 수 있다</p>
