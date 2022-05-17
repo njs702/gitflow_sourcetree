@@ -101,3 +101,20 @@ develop 브랜치에서 새로운 기능을 개발하거나 버그 수정이 필
 
 ### 5. 해당 feature를 develop 브랜치에 병합(merge)하기
 
+<p align="center"><img src="./img/step4-commit1.PNG"></p>
+
+<p align="center">README.md 파일의 내용을 변경하고 저장했으면, sourcetree에서 '커밋하지 않은 변경사항'을 확인할 수 있다.</p>
+
+<p align="center"><img src="./img/step4-commit2.PNG"></p>
+
+<p align="center">모든 변경사항을 스테이지 지역에 올리고, 커밋 메시지 작성 후 커밋을한다.</p>
+
+<p align="center"><img src="./img/step4-endfeature1.PNG"></p>
+
+<p align="center">상단의 깃플로우 탭을 선택한 후, 기능 마무리 클릭</p>
+
+<p align="center"><img src="./img/step4-endfeature2.PNG"></p>
+
+<p align="center">기능 마무리 후 브랜치 삭제 후 develop 브랜치로 변경</p>
+
+### 6. 병합된 develop 브랜치 release(배포) 하기
