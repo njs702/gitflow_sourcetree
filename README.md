@@ -79,3 +79,25 @@ develop 브랜치에서 새로운 기능을 개발하거나 버그 수정이 필
 
 ### 3. 상단의 깃플로우 탭 클릭 후 저장소 초기화 실행
 <p align="center"><img src="./img/step2-gitflow_init.PNG" width="500px" height="480px" ></p>
+
+<p align="center">초기화를 하고 나면 main, develop 브랜치가 생성되고, 위치하는 곳은 develop 브랜치가 된다.</p>
+
+### 4. feature 생성 및 기능 개발
+<p align="center"><img src="./img/step3-feature_create.PNG" width="200px" height="200px" ></p>
+
+<p align="center">상단의 깃플로우 탭 클릭 후 '새 기능 시작' 클릭</p>
+
+<p align="center"><img src="./img/step3-feature_create2.PNG" width="500px" height="200px" ></p>
+
+<p align="center">개발하려는 기능 명을 작성한다 ex) moduleA</p>
+
+<p align="center"><img src="./img/step3-feature_current_branch.PNG" width="500px" height="200px" ></p>
+
+<p align="center">위의 단계를 마무리하면 생성된 기능에 맞는 브랜치로 자동 이동되어있다</p>
+
+<p align="center"><img src="./img/step3-feature_develop.PNG" width="500px" height="200px" ></p>
+
+<p align="center">간단한 README.md 파일 수정을 해보자</p>
+
+### 5. 해당 feature를 develop 브랜치에 병합(merge)하기
+
