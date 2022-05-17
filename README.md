@@ -75,7 +75,7 @@ develop 브랜치에서 새로운 기능을 개발하거나 버그 수정이 필
 
 ### 1. github 원격 reposiory 생성
 ### 2. sourcetree를 사용해 로컬 저장소로 clone
-<p align="center"><img src="./img/step1-clone.png" width="500px" height="480px" ></p>
+<p align="center"><img src="./img/step1-clone.PNG" width="500px" height="480px" ></p>
 
 ### 3. 상단의 깃플로우 탭 클릭 후 저장소 초기화 실행
-<p align="center"><img src="./img/step2-gitflow_init.png" width="500px" height="480px" ></p>
+<p align="center"><img src="./img/step2-gitflow_init.PNG" width="500px" height="480px" ></p>
