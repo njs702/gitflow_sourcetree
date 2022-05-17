@@ -20,15 +20,21 @@ git-flow에서는 총 5개의 브랜치를 통해 개발이 이루어진다. 항
 
 ### 1. Master(main) branch
 #### *제품으로 출시될 수 있는 브랜치*
-실제로 운용중인 배포(Release) 버전을 관리하는 브랜치. 배포 가능한 상태만을 관리한다. develop와 release, hotfix 브랜치로부터 만들어진 완벽한 프로그램을 관리한다고 보면 된다.
+실제로 운용중인 배포(Release) 버전을 관리하는 브랜치. 배포 가능한 상태만을 관리한다. develop와 release, hotfix 브랜치로부터 만들어진 완벽한 프로그램을 관리한다고 보면 된다. 아래 그림에서 하늘색 노드들이 관리되는 branch를 보면 된다.
+
+<p align="center"><img src="./img/master-develop.png"></p>
+<hr/>
 
 ### 2. Devleop branch
 #### *다음 출시 버전을 개발하는 브랜치*
-개발자들이 평소에 이 develop 브랜치를 기반으로 개발을 진행하게 된다. 개발하는 기능들은 feature 브랜치에 새로 생성해서 독립적으로 개발한 뒤 develop 브랜치로 병합(merge)된다. 모든 기능(feature)들이 개발되고 면 release 브랜치로 병합되어 버그 테스트가 진행되고 문제가 없다면 master(main) 브랜치로 병합된다.
+개발자들이 평소에 이 develop 브랜치를 기반으로 개발을 진행하게 된다. 개발하는 기능들은 feature 브랜치에 새로 생성해서 독립적으로 개발한 뒤 develop 브랜치로 병합(merge)된다. 모든 기능(feature)들이 개발되고 면 release 브랜치로 병합되어 버그 테스트가 진행되고 문제가 없다면 master(main) 브랜치로 병합된다. 아래 그림에서 보라색 노드들이 관리되는 branch를 보면 된다.
+
+<p align="center"><img src="./img/master-develop.png"></p>
+<hr/>
 
 ### 3. Feature branch
 #### *기능을 개발하는 브랜치*
-develop 브랜치에서 새로운 기능을 개발하거나 버그 수정이 필요할 떄 마다 feature 브랜치로 분기하게 된다. feature 브랜치에서의 작업은 기본적으로 공유할 필요가 없기 때문에, 자신의 로컬 저장소에서 관리한다.
+develop 브랜치에서 새로운 기능을 개발하거나 버그 수정이 필요할 떄 마다 feature 브랜치로 분기하게 된다. feature 브랜치에서의 작업은 기본적으로 공유할 필요가 없기 때문에, 자신의 로컬 저장소에서 관리한다. 아래 그림의 초록색 노드들이 포함된 브랜치를 보면 된다.
 
 1. develop 브랜치에서 새로운 기능에 대한 feature 브랜치 분기
 2. 새로운 기능에 대한 개발 수행
@@ -36,12 +42,18 @@ develop 브랜치에서 새로운 기능을 개발하거나 버그 수정이 필
 4. 해당 기능을 담당하는 feature 브랜치 삭제
 5. 병합된 develop 브랜치를 원격 저장소에 push
 
+<p align="center"><img src="./img/feature-branch.png"></p>
+<hr/>
+
 ### 4. Release branch
 #### *master 브랜치로 보내기 전에 마지막 품질 검사, 테스트 등을 진행하는 브랜치*
-배포를 위한 전용 브랜치를 사용함으로써 한 팀이 배포를 준비하는 동안 다른 팀은 배포를 위한 기능 개발을 지속할 수 있다.
+배포를 위한 전용 브랜치를 사용함으로써 한 팀이 배포를 준비하는 동안 다른 팀은 배포를 위한 기능 개발을 지속할 수 있다. 아래 그림의 청록색 노드들이 포함된 브랜치를 확인하면 된다.
 
 1. develop 브랜치에서 개발 기능들이 모여 배포할 수준의 기능이 모이면 release 브랜치를 분기한다.
 2. release 브랜치에서 배포 가능한 상태(모든 기능이 정상적으로 동작하는 상태)가 되면, master(main) 브랜치로 병합한다. 이 때, 버전 Tag를 부여해 주어야 한다.
+
+<p align="center"><img src="./img/release-branch.png"></p>
+<hr/>
 
 ### 5. Hotfix branch
 #### *출시 버전에서 발생한 버그를 수정하는 브랜치*
@@ -50,3 +62,10 @@ develop 브랜치에서 새로운 기능을 개발하거나 버그 수정이 필
 1. 배포한 버전에 문제가 있을 경우 hotfix 브랜치 분기
 2. 문제가 되는 부분을 빠르게 수정
 3. master(main)브랜치에 병합 후 새로운 버전 태그를 선정
+
+<p align="center"><img src="./img/hotfix-branch.png"></p>
+
+버그 수정만을 위한 hotfix 브랜치를 따로 만들었기 때문에, 다음 배포를 위해 작업하던 다른 브랜치(develop 및 거기서 분기된 브랜치들)에 영향을 주지 않는다.
+
+<hr/>
+
